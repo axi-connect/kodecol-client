@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[39756,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js"],"default"]
+3:I[37457,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js"],"default"]
+:HL["/_next/static/chunks/0i24_0wtq~lup.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap","style"]
+0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0i24_0wtq~lup.css","precedence":"next"}]],["$","html",null,{"lang":"es","className":"space_grotesk_d7b50fc5-module__qeW00a__variable manrope_de7b2fa9-module__1ltb7q__variable h-full antialiased","children":[["$","head",null,{"children":["$","link",null,{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"}]}],["$","body",null,{"className":"min-h-full flex flex-col relative overflow-x-hidden bg-surface text-on-surface","children":[["$","div",null,{"className":"grain-overlay"}],["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}]]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"xVfzm9E78deRnFt9zk7_E"}
