@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kodecol | Engineering Conscious Evolution</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.glass-panel {
+    background: rgba(0, 60, 51, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px)
+    }
+.grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBeyT8KVJGeJ3W3lMiEFyFiefOKPTyHlTerNdfQQHA2usUp_afuWs3JDPhoQXPMtmH8hCe6ZMrJg7ir6QF59YR5r2xsKeGYJEJRE-pNPB3yH_W0djq6X-daJz-VIIme8x7PtLK_9nKwszTd0u77E4eWakqYVKHob7_SxyiIbcQByhngTIxS9TerjAElzX4l85NN2yUwt34wNqzOGYGbx7VBKBBVMx00t_uqdjiq8paRUDfysAG3mdHvr49fPcYSNIjIwk1OGtSlfn5i)
+    }
+.text-glow {
+    text-shadow: 0 0 20px rgba(130, 215, 186, 0.3)
+    }
+.asymmetric-clip {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%)
+    }</style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "secondary-fixed-dim": "#9cd1c3",
+                "surface": "#001712",
+                "secondary-container": "#1a4f44",
+                "on-primary-fixed-variant": "#00513f",
+                "inverse-on-surface": "#00382e",
+                "primary": "#82d7ba",
+                "surface-dim": "#001712",
+                "on-primary-fixed": "#002118",
+                "surface-container-lowest": "#00110d",
+                "secondary-fixed": "#b8eddf",
+                "primary-fixed-dim": "#82d7ba",
+                "on-surface-variant": "#bec9c3",
+                "surface-container": "#00251e",
+                "surface-container-high": "#003028",
+                "surface-tint": "#82d7ba",
+                "on-primary": "#00382b",
+                "inverse-surface": "#b8eddf",
+                "outline-variant": "#3e4944",
+                "on-error-container": "#ffdad6",
+                "secondary": "#9cd1c3",
+                "error-container": "#93000a",
+                "tertiary-fixed-dim": "#ffb4a8",
+                "surface-container-highest": "#003c33",
+                "error": "#ffb4ab",
+                "on-secondary": "#00382e",
+                "primary-container": "#006b54",
+                "tertiary": "#ffb4a8",
+                "on-secondary-fixed": "#00201a",
+                "on-surface": "#b8eddf",
+                "tertiary-fixed": "#ffdad4",
+                "surface-container-low": "#00201a",
+                "on-secondary-container": "#8bbfb2",
+                "outline": "#88938e",
+                "on-tertiary-fixed-variant": "#753229",
+                "primary-fixed": "#9ef3d6",
+                "on-secondary-fixed-variant": "#1a4f44",
+                "on-primary-container": "#94e8cb",
+                "surface-bright": "#064137",
+                "surface-variant": "#003c33",
+                "on-error": "#690005",
+                "background": "#001712",
+                "inverse-primary": "#016b54",
+                "on-background": "#b8eddf",
+                "tertiary-container": "#92493e",
+                "on-tertiary-container": "#ffcdc5",
+                "on-tertiary": "#581d15",
+                "on-tertiary-fixed": "#3c0804"
+              },
+              fontFamily: {
+                "headline": ["Space Grotesk"],
+                "body": ["Manrope"],
+                "label": ["Space Grotesk"]
+              },
+              borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<div class="grain-overlay"></div>
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-emerald-950/40 backdrop-blur-xl border-b border-emerald-500/15">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-emerald-50 dark:text-emerald-400 tracking-tighter font-headline">
+                Kodecol
+            </div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-headline font-bold tracking-tight uppercase text-emerald-100/70 hover:text-emerald-50 transition-colors" href="#">Soul</a>
+<a class="font-headline font-bold tracking-tight uppercase text-emerald-100/70 hover:text-emerald-50 transition-colors" href="#">Our Cause</a>
+<a class="font-headline font-bold tracking-tight uppercase text-emerald-100/70 hover:text-emerald-50 transition-colors" href="#">Growth Model</a>
+<a class="font-headline font-bold tracking-tight uppercase text-emerald-100/70 hover:text-emerald-50 transition-colors" href="#">Solutions</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-headline font-bold uppercase tracking-widest text-sm hover:scale-95 active:scale-90 transition-transform shadow-[0px_20px_40px_rgba(130,215,186,0.1)]">
+                Talk to Us
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0 bg-gradient-to-br from-surface via-primary-container/20 to-surface"></div>
+<div class="container mx-auto px-8 grid md:grid-cols-2 gap-12 items-center relative z-10">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label text-xs uppercase tracking-[0.2em] mb-6">The Kinetic Monolith</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold leading-tight tracking-tighter text-glow mb-8">
+                    Technology with a <span class="text-primary">Soul.</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-light leading-relaxed mb-12">
+                    Growth with Purpose. We engineer software that breathes, evolves, and prioritizes human impact above code.
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg hover:shadow-[0px_0px_30px_rgba(130,215,186,0.4)] transition-all group">
+                        Begin Evolution
+                        <span class="material-symbols-outlined align-middle ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="border border-outline-variant text-on-surface px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-surface-container-high transition-all">
+                        View Matrix
+                    </button>
+</div>
+</div>
+<div class="relative flex justify-center">
+<div class="w-72 h-72 md:w-[500px] md:h-[500px] bg-gradient-to-tr from-primary/30 to-emerald-400/10 rounded-xl glass-panel flex items-center justify-center transform rotate-12 shadow-2xl relative">
+<div class="absolute inset-0 border border-primary/20 rounded-xl -rotate-6"></div>
+<div class="text-[12rem] md:text-[20rem] font-headline font-black text-primary/80 select-none opacity-50 blur-[2px]">K</div>
+<div class="absolute text-[12rem] md:text-[20rem] font-headline font-black text-primary drop-shadow-2xl">K</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Client Slider -->
+<section class="py-20 border-y border-outline-variant/10 bg-surface-container-lowest/50">
+<div class="container mx-auto px-8">
+<p class="text-center font-label text-xs uppercase tracking-[0.3em] text-outline mb-12">Trusted by Global Visionaries</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+<span class="text-2xl font-bold font-headline tracking-tighter">Mega Guay</span>
+<span class="text-2xl font-bold font-headline tracking-tighter">Quantica</span>
+<span class="text-2xl font-bold font-headline tracking-tighter">Terpel</span>
+<span class="text-2xl font-bold font-headline tracking-tighter">Acertemos</span>
+</div>
+</div>
+</section>
+<!-- The Soul -->
+<section class="py-32 bg-surface-container-low relative">
+<div class="container mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="w-full aspect-square rounded-lg bg-surface-container-highest overflow-hidden relative">
+<img class="w-full h-full object-cover mix-blend-overlay opacity-60" data-alt="Futuristic digital network representing global impact" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeyn8-DsqYUlItHxiSvp28u3BPO39iYKTv4u3wZ0T3TTjT3MGUeieM-wd_ErhUFJtl2zhw6y53FhI8-Goasa5uSvxYEm4LqXANyrqikkhe7ldjEUbzJr3imeZvIEY8ifv3Fej2B2UhCv5gHZAh8YYJD4sriXhsH5ntjMCr_BHgi1zXQtFsYAtnEqRfrhZF3lmzr2e5MmtF-4HFsXfsBwGo2Gb1OPkDY2gmEjfjM9OST2YxAemYoaJm3te9Vk2p5zDouGDrYdo_XMrR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+<div class="absolute -bottom-10 -right-10 glass-panel p-8 rounded-lg max-w-xs hidden lg:block">
+<p class="text-primary font-headline text-3xl font-bold mb-2">+40%</p>
+<p class="text-sm text-on-surface-variant font-medium">Efficiency boost through conscious automation architecture.</p>
+</div>
+</div>
+<div>
+<h2 class="text-4xl md:text-6xl font-headline font-bold mb-8 leading-tight">Impact Beyond <span class="text-primary">Software.</span></h2>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-10">
+                    At Kodecol, we don't just write code; we cultivate ecosystems. We believe technology should serve as a bridge between today's efficiency and tomorrow's sustainability. Every algorithm we deploy is measured by its human footprint and environmental consciousness.
+                </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">eco</span>
+<div>
+<h4 class="font-headline font-bold text-xl">Regenerative Tech</h4>
+<p class="text-on-surface-variant text-sm">Software architectures that optimize energy and resource cycles.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">group_work</span>
+<div>
+<h4 class="font-headline font-bold text-xl">Human-Centric UX</h4>
+<p class="text-on-surface-variant text-sm">Interfaces designed for dignity, clarity, and cognitive ease.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Conscious Growth Model (Bento Grid) -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-8">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<h2 class="text-4xl md:text-6xl font-headline font-bold mb-6">Conscious Growth Model</h2>
+<p class="text-on-surface-variant">The blueprint for a future where innovation and humanity coexist.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Grow without destroying -->
+<div class="bg-surface-container-high p-10 rounded-lg hover:translate-y-[-10px] transition-transform duration-500 border border-outline-variant/10 flex flex-col justify-between h-[450px]">
+<div>
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-primary-container text-3xl">filter_vintage</span>
+</div>
+<h3 class="text-3xl font-headline font-bold mb-4">Grow without destroying</h3>
+<p class="text-on-surface-variant">Scalable systems that harmonize with organizational culture rather than replacing it with cold automation.</p>
+</div>
+<div class="h-24 w-full bg-surface-container rounded-lg relative overflow-hidden">
+<div class="absolute inset-y-0 left-0 bg-primary/20 w-3/4 blur-xl"></div>
+<div class="flex items-center h-full px-6 gap-2">
+<div class="h-12 w-2 bg-primary rounded-full"></div>
+<div class="h-8 w-2 bg-primary/60 rounded-full"></div>
+<div class="h-16 w-2 bg-primary rounded-full"></div>
+<div class="h-10 w-2 bg-primary/40 rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Innovate without forgetting -->
+<div class="bg-primary-container p-10 rounded-lg hover:translate-y-[-10px] transition-transform duration-500 text-on-primary-container flex flex-col justify-between h-[450px]">
+<div>
+<div class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">memory</span>
+</div>
+<h3 class="text-3xl font-headline font-bold mb-4">Innovate without forgetting</h3>
+<p class="opacity-80">Leveraging cutting-edge AI while preserving the fundamental wisdom of your business legacy.</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-5xl font-black font-headline opacity-30">01</span>
+<div class="h-[1px] flex-grow bg-on-primary-container/20"></div>
+<span class="material-symbols-outlined">api</span>
+</div>
+</div>
+<!-- Advance without losing humanity -->
+<div class="bg-surface-container-high p-10 rounded-lg hover:translate-y-[-10px] transition-transform duration-500 border border-outline-variant/10 flex flex-col justify-between h-[450px]">
+<div>
+<div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl">psychology</span>
+</div>
+<h3 class="text-3xl font-headline font-bold mb-4">Advance without losing humanity</h3>
+<p class="text-on-surface-variant">Automation that liberates humans for creative high-value tasks, not redundancy.</p>
+</div>
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-primary/20"></div>
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-primary/40"></div>
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-primary/60"></div>
+<div class="w-12 h-12 rounded-full border-4 border-surface bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-sm">add</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem/Solution -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="container mx-auto px-8">
+<div class="grid md:grid-cols-2 gap-px bg-outline-variant/20 rounded-xl overflow-hidden border border-outline-variant/20 shadow-2xl">
+<!-- Problem -->
+<div class="bg-surface p-12 md:p-20">
+<span class="text-error font-label text-xs uppercase tracking-widest mb-6 block">Current Reality</span>
+<h3 class="text-4xl font-headline font-bold mb-8">Stagnant Systems</h3>
+<div class="space-y-6">
+<div class="flex items-center gap-4 p-4 rounded-lg bg-error-container/10 border border-error/10">
+<span class="material-symbols-outlined text-error">dangerous</span>
+<span class="text-on-surface-variant">Manual, error-prone workflows</span>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-error-container/10 border border-error/10 opacity-70">
+<span class="material-symbols-outlined text-error">timer_off</span>
+<span class="text-on-surface-variant">Disconnected legacy architecture</span>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-error-container/10 border border-error/10 opacity-40">
+<span class="material-symbols-outlined text-error">cloud_off</span>
+<span class="text-on-surface-variant">Scalability bottlenecks</span>
+</div>
+</div>
+</div>
+<!-- Solution -->
+<div class="bg-surface-container-highest p-12 md:p-20 relative">
+<div class="absolute inset-0 bg-primary/5 blur-3xl rounded-full"></div>
+<span class="text-primary font-label text-xs uppercase tracking-widest mb-6 block">Kodecol Future</span>
+<h3 class="text-4xl font-headline font-bold mb-8">Intelligent Evolution</h3>
+<div class="space-y-6 relative z-10">
+<div class="flex items-center gap-4 p-4 rounded-lg bg-primary/10 border border-primary/20">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<span class="text-on-surface">Self-optimizing AI modules</span>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-primary/10 border border-primary/20">
+<span class="material-symbols-outlined text-primary">hub</span>
+<span class="text-on-surface">Unified neural ecosystems</span>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-primary/10 border border-primary/20">
+<span class="material-symbols-outlined text-primary">rocket_launch</span>
+<span class="text-on-surface">Infinite scalability elasticity</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services -->
+<section class="py-32">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-xl">
+<h2 class="text-4xl md:text-6xl font-headline font-bold mb-4">Core Capacities</h2>
+<p class="text-on-surface-variant">Specialized engineering for complex modern challenges.</p>
+</div>
+<button class="text-primary font-headline font-bold underline decoration-2 underline-offset-8 hover:decoration-primary-container transition-all">Download Services Manifest</button>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="group">
+<div class="relative overflow-hidden rounded-lg mb-8 aspect-video">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" data-alt="Abstract AI neural network visualization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL3BjWzQTXEmp-I1XVrLM76zPUKG0L3DIjwuG8e22TgWiUAPwnYiVlwsgklCO1LmqcPdkJnwbTZmb2DnnS5he0aYW7vvgQzgsabq5ect3tNXq8EDiDh_76-pXvo0_B-YJhVqLMgeARO685vrFs9Y-TnceDs9g8HtT7hQMs6ZcDPybVzNPBy7B43o20WdOqf9EgfNQSeenMWtwdO2z1dp-P5wLznmhUZ_o45NTTlttvA0PL6eBMOCxeDePVl0h9rdJ8G9Swad6GA8GZ"/>
+</div>
+<h4 class="text-2xl font-headline font-bold mb-4">AI-Driven Software</h4>
+<p class="text-on-surface-variant leading-relaxed">Beyond basic code—we build systems that learn from user behavior and environmental context to improve autonomously.</p>
+</div>
+<div class="group">
+<div class="relative overflow-hidden rounded-lg mb-8 aspect-video">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" data-alt="Complex business diagram on glass screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLCjvTDlcC0WLFq-syOBRqyRxeNkv_83jDebtkVe0MB9WG_DGiw8AFPzY8Cjpw3J-oAfI8h3tCfY7wBYugkshgi4kafn8rCnEaebzKXSNjeh4mcmeGSkfc6PGCPwBjGw-gBaGw4gfyhqWMgbNYxYX1qnAcsQOB3luTMJljAR_6_rD0VtPTtOuH4wv9IAc6dG7JlH_XPMQOfBijylgWeDdJbd-VnnZEx4ngEtJCFian9PIvNUmqEj9JOTvsvkw83CGCbHaGdC_ogaQW"/>
+</div>
+<h4 class="text-2xl font-headline font-bold mb-4">Business Redesign</h4>
+<p class="text-on-surface-variant leading-relaxed">Structural transformation of business models to embrace digital liquidity and conscious growth cycles.</p>
+</div>
+<div class="group">
+<div class="relative overflow-hidden rounded-lg mb-8 aspect-video">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" data-alt="Robotic arm gently touching a green leaf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGiTt0wGQZMZ1EDJJW-Vzi9OwiPllB94vwfDQiKIatJuJTul69LOdQjTqVluFCKd4-bm8QPTnVyYa_HaLRpDLqLAS309mcicghGe0owTU7SOatPg4uBIr3W4Fv9kyi7cjUSnrQRzYC3VqL0vXwEtkXLjzHI7r-aOaIVHAUZ-v4yNu9gawqYPnAVQ-AJ6TMPtOYSA4eeTCLPx3IC3AnddWUl5kmxU2ysJIUUyDum9NrWugL0pkCrTI4zkqjOV2NqqFBHMCrQbdVmZNf"/>
+</div>
+<h4 class="text-2xl font-headline font-bold mb-4">Conscious Automation</h4>
+<p class="text-on-surface-variant leading-relaxed">Deployment of robotic process automation that respects workforce dynamics and operational ethics.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 container mx-auto px-8">
+<div class="bg-gradient-to-r from-primary-container to-surface-container-highest rounded-lg p-12 md:p-24 relative overflow-hidden shadow-2xl">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/20 blur-[100px] -mr-48 -mt-48"></div>
+<div class="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-5xl md:text-7xl font-headline font-bold mb-8 leading-tight">Build Future <br/><span class="text-primary">with Us.</span></h2>
+<p class="text-xl text-on-surface-variant max-w-md mb-12">Ready to evolve your digital presence with purpose? Let's engineer something that matters.</p>
+<div class="flex gap-4">
+<div class="flex -space-x-2">
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container"></div>
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container"></div>
+<div class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container"></div>
+</div>
+<p class="text-sm font-label uppercase tracking-widest text-primary pt-2">Join 50+ conscious enterprises</p>
+</div>
+</div>
+<div class="glass-panel p-8 rounded-lg border border-primary/10">
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-label uppercase tracking-widest mb-2 opacity-60">First Name</label>
+<input class="w-full bg-surface-container-lowest border-0 rounded-md focus:ring-2 focus:ring-primary/50 py-3 text-on-surface" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-label uppercase tracking-widest mb-2 opacity-60">Company</label>
+<input class="w-full bg-surface-container-lowest border-0 rounded-md focus:ring-2 focus:ring-primary/50 py-3 text-on-surface" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-label uppercase tracking-widest mb-2 opacity-60">Mission Email</label>
+<input class="w-full bg-surface-container-lowest border-0 rounded-md focus:ring-2 focus:ring-primary/50 py-3 text-on-surface" type="email"/>
+</div>
+<button class="w-full bg-primary text-on-primary font-headline font-bold py-4 rounded-md hover:brightness-110 transition-all flex items-center justify-center gap-2 group">
+                            Initiate Protocol
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">bolt</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#001712] w-full rounded-t-[2rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-emerald-50 mb-4 font-headline">Kodecol</div>
+<p class="font-manrope text-sm text-emerald-100/60 leading-relaxed mb-6">Engineering the next epoch of human-software collaboration.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary hover:opacity-100 opacity-60 cursor-pointer">share</span>
+<span class="material-symbols-outlined text-primary hover:opacity-100 opacity-60 cursor-pointer">public</span>
+<span class="material-symbols-outlined text-primary hover:opacity-100 opacity-60 cursor-pointer">terminal</span>
+</div>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary mb-6">Foundation</h5>
+<ul class="space-y-4 font-manrope text-sm text-emerald-100/60">
+<li><a class="hover:text-emerald-400 hover:translate-x-1 transition-all inline-block" href="#">Soul</a></li>
+<li><a class="hover:text-emerald-400 hover:translate-x-1 transition-all inline-block" href="#">Our Cause</a></li>
+<li><a class="hover:text-emerald-400 hover:translate-x-1 transition-all inline-block" href="#">Ethics Charter</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary mb-6">Capabilities</h5>
+<ul class="space-y-4 font-manrope text-sm text-emerald-100/60">
+<li><a class="hover:text-emerald-400 hover:translate-x-1 transition-all inline-block" href="#">Growth Model</a></li>
+<li><a class="hover:text-emerald-400 hover:translate-x-1 transition-all inline-block" href="#">Solutions</a></li>
+<li><a class="hover:text-emerald-400 hover:translate-x-1 transition-all inline-block" href="#">Services</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary mb-6">Contact</h5>
+<p class="font-manrope text-sm text-emerald-100/60 mb-2">matrix@kodecol.io</p>
+<p class="font-manrope text-sm text-emerald-100/60">+1 800 KODE COL</p>
+<div class="mt-8 pt-8 border-t border-emerald-500/10">
+<p class="font-manrope text-xs text-emerald-100/40">© 2024 Kodecol. Engineering Conscious Evolution.</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

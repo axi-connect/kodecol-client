@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-surface: #001712;
+  --color-surface-dim: #001712;
+  --color-surface-bright: #064137;
+  --color-surface-container-lowest: #00110d;
+  --color-surface-container-low: #00201a;
+  --color-surface-container: #00251e;
+  --color-surface-container-high: #003028;
+  --color-surface-container-highest: #003c33;
+  
+  --color-primary: #82d7ba;
+  --color-primary-container: #006b54;
+  --color-on-primary: #00382b;
+  --color-on-primary-container: #94e8cb;
+  
+  --color-secondary: #9cd1c3;
+  --color-secondary-container: #1a4f44;
+  --color-on-secondary: #00382e;
+  --color-on-secondary-container: #8bbfb2;
+  
+  --color-surface-variant: #003c33;
+  --color-on-surface: #b8eddf;
+  --color-on-surface-variant: #bec9c3;
+  
+  --color-outline: #88938e;
+  --color-outline-variant: #3e4944;
+  
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+  --color-on-error: #690005;
+  --color-on-error-container: #ffdad6;
+
+  --font-headline: var(--font-space-grotesk);
+  --font-body: var(--font-manrope);
+  --font-label: var(--font-space-grotesk);
+
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+  
+  --shadow-emerald-glow: 0px 20px 40px rgba(130, 215, 186, 0.06);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .glass-panel {
+    background: rgba(0, 60, 51, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBeyT8KVJGeJ3W3lMiEFyFiefOKPTyHlTerNdfQQHA2usUp_afuWs3JDPhoQXPMtmH8hCe6ZMrJg7ir6QF59YR5r2xsKeGYJEJRE-pNPB3yH_W0djq6X-daJz-VIIme8x7PtLK_9nKwszTd0u77E4eWakqYVKHob7_SxyiIbcQByhngTIxS9TerjAElzX4l85NN2yUwt34wNqzOGYGbx7VBKBBVMx00t_uqdjiq8paRUDfysAG3mdHvr49fPcYSNIjIwk1OGtSlfn5i");
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(130, 215, 186, 0.3);
+  }
+
+  .asymmetric-clip {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+  }
 }
