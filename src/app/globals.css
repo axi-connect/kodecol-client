@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+/*
+  Tokens del design system Kodecol.
+  Fuente de verdad de los valores: docs/DESIGN-SYSTEM.md.
+  Regla: los componentes consumen SOLO estos tokens (vía clases Tailwind), nunca hex sueltos.
+*/
+@theme {
+  /* ── Escala verde de marca ─────────────────────────────── */
+  --color-green-50: #eafbf6;
+  --color-green-100: #c9f4e9;
+  --color-green-200: #93e8d4;
+  --color-green-300: #54d8bb;
+  --color-green-400: #18bd9a;
+  --color-green-500: #009a7b;
+  --color-green-600: #00735c; /* color de marca */
+  --color-green-700: #015e4f;
+  --color-green-800: #014b4d; /* petróleo */
+  --color-green-900: #013a3b;
+  --color-green-950: #002c2c;
+
+  /* ── Acento menta (recurso escaso, ~10%) ───────────────── */
+  --color-mint-300: #7ff0c6;
+  --color-mint-400: #54e8b0;
+  --color-mint-500: #34e0a1; /* acento principal / CTA */
+  --color-mint-600: #1fc98c;
+  --color-mint-700: #18a876;
+
+  /* ── Superficies dark con matiz verde ──────────────────── */
+  --color-bg: #04110f;
+  --color-surface-1: #081a16;
+  --color-surface-2: #0c2320;
+  --color-surface-3: #103029;
+  --color-surface-inset: #02100d;
+
+  /* ── Texto ─────────────────────────────────────────────── */
+  --color-text-primary: #f2f7f5;
+  --color-text-secondary: #9fb8b0;
+  --color-text-muted: #6e847d;
+  --color-text-brandmark: #7c938b;
+  --color-text-disabled: #4a5a55;
+  --color-text-on-accent: #04110f;
+
+  /* ── Vidrio y bordes ───────────────────────────────────── */
+  --color-glass-fill: rgba(12, 35, 31, 0.55);
+  --color-glass-fill-strong: rgba(12, 35, 31, 0.78);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --color-glass-highlight: rgba(255, 255, 255, 0.16);
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-default: rgba(255, 255, 255, 0.12);
+  --color-border-strong: rgba(255, 255, 255, 0.2);
+  --color-border-accent: rgba(52, 224, 161, 0.45);
+
+  /* ── Semánticos ────────────────────────────────────────── */
+  --color-success: #34e0a1;
+  --color-info: #5ad1d6;
+  --color-warning: #f5c451;
+  --color-error: #ff6b6b;
+
+  /* ── Tipografía ────────────────────────────────────────── */
+  --font-sora: var(--font-sora), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-poppins: var(--font-poppins), system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* ── Radios ────────────────────────────────────────────── */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  /* ── Sombras y glows ───────────────────────────────────── */
+  --shadow-soft-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-soft-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-soft-lg: 0 16px 48px rgba(0, 0, 0, 0.45);
+  --shadow-glow-accent: 0 0 32px rgba(52, 224, 161, 0.35);
+  --shadow-glow-accent-strong: 0 0 26px rgba(52, 224, 161, 0.4);
+  --shadow-glow-brand: 0 0 64px rgba(0, 115, 92, 0.4);
+  --shadow-inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  --shadow-glass:
+    0 8px 24px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  --shadow-glass-lg:
+    0 16px 48px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+
+  /* Glows que siguen la silueta: para PNG/SVG transparentes, donde un box-shadow
+     dibujaría un halo rectangular en vez del contorno de la marca. */
+  --drop-shadow-glow-accent: 0 0 18px rgba(52, 224, 161, 0.35);
+  --drop-shadow-glow-brand: 0 0 28px rgba(0, 115, 92, 0.5);
+
+  /* ── Movimiento ────────────────────────────────────────── */
+  --ease-kodecol: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-symmetric: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 400ms;
+
+  /* ── Puente shadcn ─────────────────────────────────────────
+     shadcn genera componentes con nombres de token propios (bg-primary,
+     text-muted-foreground, ring-ring…). Estos alias los redirigen a la paleta
+     de Kodecol, así que un componente recién vendorizado sale ya en la marca
+     y no hay que reescribir sus clases. Ver architecture.md §9.
+     No cambian nada hasta que un componente shadcn los use. */
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-text-primary);
+  --color-card: var(--color-surface-1);
+  --color-card-foreground: var(--color-text-primary);
+  --color-popover: var(--color-surface-2);
+  --color-popover-foreground: var(--color-text-primary);
+  --color-primary: var(--color-mint-500);
+  --color-primary-foreground: var(--color-text-on-accent);
+  --color-secondary: var(--color-surface-2);
+  --color-secondary-foreground: var(--color-text-primary);
+  --color-muted: var(--color-surface-2);
+  --color-muted-foreground: var(--color-text-secondary);
+  --color-accent: var(--color-surface-3);
+  --color-accent-foreground: var(--color-text-primary);
+  --color-destructive: var(--color-error);
+  --color-destructive-foreground: var(--color-text-primary);
+  --color-border: var(--color-border-default);
+  --color-input: var(--color-border-default);
+  --color-ring: var(--color-border-accent);
+
+  /* ── Animaciones de marca ──────────────────────────────── */
+  --animate-kc-pulse: kc-pulse 7s ease-in-out infinite;
+  --animate-kc-float: kc-float 8s ease-in-out infinite;
+  --animate-kc-spin: kc-spin 26s linear infinite;
+  --animate-kc-spin-reverse: kc-spin 18s linear infinite reverse;
+  --animate-kc-rise: kc-rise 4s ease-in-out infinite;
+  /* Deriva de las columnas del campo 3D de marcas propias */
+  --animate-kc-drift-down: kc-drift-down 10s ease-in-out infinite alternate;
+  --animate-kc-drift-up: kc-drift-up 15s ease-in-out infinite alternate;
+
+  @keyframes kc-pulse {
+    0%,
+    100% {
+      opacity: 0.55;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.06);
+    }
+  }
+  @keyframes kc-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes kc-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes kc-rise {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-7px);
+    }
+  }
+  @keyframes kc-drift-down {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100px);
+    }
+  }
+  @keyframes kc-drift-up {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100px);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-poppins);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(52, 224, 161, 0.35);
+  color: var(--color-text-primary);
+}
+
+/* Las secciones con ancla no quedan tapadas por el navbar flotante */
+[id] {
+  scroll-margin-top: 96px;
+}
+
+/* Estado inicial del reveal on scroll (shared/ui/reveal.tsx) */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s var(--ease-kodecol),
+    transform 0.7s var(--ease-kodecol);
+}
+[data-reveal="visible"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accesibilidad: sin animaciones si el usuario reduce movimiento */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}

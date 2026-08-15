@@ -1,0 +1,139 @@
+{
+  "slug": "juan",
+  "full_name": "Juan David Herrera Ramírez",
+  "short_name": "Juan",
+  "role_badge": "Desarrollador Web · Front-End / Full Stack",
+  "tagline": "Front-end con Angular y back-end robusto. Scrum Master certificado, enfocado en la mejora continua de los procesos.",
+  "location": "Colombia · Español nativo · Inglés B1+",
+  "photo_src": null,
+  "cv_src": "/cv/juan_herrera_cv.pdf",
+  "metrics": [
+    { "value": "9+", "label": "años de experiencia" },
+    { "value": "5", "label": "empresas" },
+    { "value": "SMPC", "label": "Scrum Master" }
+  ],
+  "about": "Desarrollador web colombiano con experiencia full-cycle: front-end con Angular y SASS, back-end robusto con Laravel y Node, y bases de datos SQL / NoSQL. Scrum Master certificado, enfocado en la mejora continua de procesos. Hoy desarrollo módulos del sistema SIIS para la administración de clínicas en Dumian Medical.",
+  "skill_groups": [
+    {
+      "title": "Lenguajes & Frameworks",
+      "skills": ["JavaScript", "PHP", "Node JS", "Laravel"]
+    },
+    {
+      "title": "Front-End",
+      "skills": ["HTML", "CSS / SASS", "Angular", "Bootstrap"]
+    },
+    {
+      "title": "Bases de datos",
+      "skills": ["SQL", "MySQL", "Oracle", "PostgreSQL"]
+    },
+    {
+      "title": "Metodologías & CMS",
+      "skills": ["Scrum", "WordPress", "Joomla"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Ingeniero de Desarrollo",
+      "company": "Dumian Medical",
+      "period": "Mar 2023 – Actual",
+      "location": "Colombia",
+      "description": "Desarrollo de módulos del aplicativo web SIIS para la administración de clínicas: PHP, JavaScript, Bootstrap, PostgreSQL, Angular y Laravel.",
+      "initially_visible": true
+    },
+    {
+      "role": "Analista de Desarrollo Front-End",
+      "company": "La Fortuna S.A",
+      "period": "Abr 2021 – Mar 2023",
+      "location": "Colombia",
+      "description": "Levantamiento de requerimientos, consultas Oracle, front-end con Angular y SASS, back-end con Laravel y Node.",
+      "initially_visible": true
+    },
+    {
+      "role": "Auxiliar de Soporte",
+      "company": "Crepes & Waffles",
+      "period": "Jun 2016 – Abr 2021",
+      "location": "Colombia",
+      "description": "App web de inventario (PHP, Bootstrap 4, MySQL) y soporte técnico a la operación.",
+      "initially_visible": true
+    },
+    {
+      "role": "Desarrollador Web",
+      "company": "B-krais",
+      "period": "Sep 2015 – Feb 2016",
+      "location": "Colombia",
+      "description": "Sitios en WordPress y contenido para redes sociales.",
+      "initially_visible": false
+    },
+    {
+      "role": "Desarrollador Web",
+      "company": "Virtual System Company",
+      "period": "Oct 2014 – Jun 2015",
+      "location": "Colombia",
+      "description": "Sitios en WordPress y Joomla, maquetación HTML/CSS/JS.",
+      "initially_visible": false
+    }
+  ],
+  "education": [
+    {
+      "title": "Ingeniería en Sistemas",
+      "institution": "UniRemington",
+      "period": "Culminado"
+    },
+    {
+      "title": "Análisis y Desarrollo de Sistemas de Información",
+      "institution": "SENA",
+      "period": "Culminado"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Scrum Master Professional · SMPC v2020",
+      "issuer": "CertiProf · Agosto 2022"
+    }
+  ],
+  "languages": [
+    { "language": "Español", "level": "Nativo" },
+    { "language": "Inglés", "level": "B1+" }
+  ],
+  "soft_skills": [
+    "Trabajo en equipo",
+    "Organizado",
+    "Gestión del tiempo",
+    "Espíritu creativo",
+    "Recursivo",
+    "Disciplinado"
+  ],
+  "projects": [
+    {
+      "title": "SIIS — Administración de clínicas",
+      "badge": "Proyecto actual",
+      "description": "Módulos del sistema de información para la administración de clínicas, con Angular, PHP/Laravel y PostgreSQL.",
+      "chips": ["Angular", "Laravel", "PostgreSQL", "Bootstrap"],
+      "featured": true
+    },
+    {
+      "title": "Gestión de inventario web",
+      "badge": "Crepes & Waffles",
+      "description": "Aplicación web de inventario construida con PHP, Bootstrap 4 y MySQL.",
+      "chips": ["PHP", "Bootstrap", "MySQL"],
+      "featured": false
+    },
+    {
+      "title": "Plataformas a la medida",
+      "badge": "La Fortuna S.A",
+      "description": "Desarrollo front-end con Angular y SASS sobre servicios Laravel y Node, con consultas Oracle.",
+      "chips": ["Angular", "SASS", "Laravel", "Node"],
+      "featured": false
+    }
+  ],
+  "contact": {
+    "whatsapp_number": "573224532579",
+    "email": "jd13hr@gmail.com",
+    "linkedin_url": "https://linkedin.com/in/jd13hr/",
+    "github_url": "https://github.com/JD13HR"
+  },
+  "seo": {
+    "title": "Juan David Herrera — Desarrollador Web · Front-End / Full Stack",
+    "description": "Portafolio de Juan David Herrera Ramírez: front-end con Angular, back-end con Laravel y Node, Scrum Master certificado. Parte de la crew de Kodecol."
+  }
+}

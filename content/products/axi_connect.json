@@ -1,0 +1,171 @@
+{
+  "slug": "axi-connect",
+  "name": "axi connect",
+  "isotype_src": "/images/products/axi-connect/isotype.png",
+  "wordmark_src": "/images/products/axi-connect/wordmark.png",
+  "gallery": [
+    "/images/products/axi-connect/gallery/agents.webp",
+    "/images/products/axi-connect/gallery/inbox_list.webp",
+    "/images/products/axi-connect/gallery/notification.webp",
+    "/images/products/axi-connect/gallery/brand_iso.webp",
+    "/images/products/axi-connect/gallery/conversation.webp",
+    "/images/products/axi-connect/gallery/inbox_chat.webp",
+    "/images/products/axi-connect/gallery/inbox.webp",
+    "/images/products/axi-connect/gallery/brand_word.webp"
+  ],
+  "theme": {
+    "ground": "#0a0a0a",
+    "surface": "#18181b",
+    "surface_raised": "#1f1f23",
+    "accent": "#fb7185",
+    "accent_soft": "#fda4af",
+    "ink": "#ededed",
+    "ink_muted": "#a1a1a6",
+    "ink_dim": "#71717a",
+    "line": "#2b2b30"
+  },
+  "teaser": {
+    "kind": "SaaS · Ventas por chat",
+    "status": "En producción",
+    "claim_lead": "El futuro es ",
+    "claim_accent": "conversacional",
+    "summary": "Tus clientes ya no entran por la puerta: entran por el chat, desde cualquier canal. Y cada uno que se queda sin respuesta es una venta que le compraste a la competencia.",
+    "chips": ["En producción", "3 empresas piloto"],
+    "cta_label": "Conocer el producto"
+  },
+  "detail": {
+    "eyebrow": "Producto propio de Kodecol",
+    "headline_lead": "Axi Connect es lo que pasa cuando construimos ",
+    "headline_accent": "para nosotros mismos",
+    "description": "Un SaaS donde las empresas venden por WhatsApp con agentes de inteligencia artificial. Lo pensamos, lo construimos y lo operamos nosotros. Hoy está en producción atendiendo clientes reales — y es la muestra más honesta de cómo trabajamos.",
+    "chips": ["En producción", "3 empresas piloto", "Colombia"],
+    "primary_cta": {
+      "label": "Ver Axi Connect",
+      "href": "https://axi-connect.co",
+      "external": true
+    },
+    "origin": {
+      "eyebrow": "Por qué lo construimos",
+      "title": "La puerta cambió de sitio. La forma de gestionarla, no.",
+      "paragraphs": [
+        "Las empresas montaron procesos, controles y reportes alrededor del mostrador y del correo. Después el dinero se mudó al chat y nadie rehízo la operación detrás: sin tiempos de respuesta, sin seguimiento al que no volvió, sin trazabilidad de quién prometió qué, sin un solo número que diga si esto funciona. El canal más rentable acabó siendo el menos gestionado.",
+        "Podíamos resolverlo una vez, a la medida. Decidimos resolverlo bien, una sola vez, para todos. Esa decisión es Axi Connect."
+      ]
+    },
+    "principles": {
+      "eyebrow": "La decisión que define el producto",
+      "title": "El dato no pasa por la IA.",
+      "quote_lead": "El agente no puede inventar un precio. No porque se lo pidamos amablemente, ",
+      "quote_accent": "sino porque el dato no pasa por ahí",
+      "items": [
+        {
+          "title": "Los precios los calcula el servidor",
+          "description": "Cada cotización y cada total salen del catálogo con las reglas del negocio. El modelo de lenguaje nunca es la fuente de una cifra: la consulta."
+        },
+        {
+          "title": "Crear un pedido no acepta productos",
+          "description": "La herramienta que crea pedidos no recibe items. La única fuente es el carrito del servidor, así que no hay superficie por donde colar un producto que no existe."
+        },
+        {
+          "title": "Una venta está pagada cuando una persona lo dice",
+          "description": "El agente registra el comprobante; darlo por bueno es siempre decisión de un humano. Eso no se automatiza, por diseño."
+        },
+        {
+          "title": "Si no sabe, escala",
+          "description": "Máximo 5 pasos de razonamiento y 30 segundos por turno. Tras dos fallos, la conversación pasa a una persona con todo el contexto."
+        }
+      ]
+    },
+    "metrics": {
+      "eyebrow": "Lo que hay debajo",
+      "title": "La parte que un folleto de producto nunca te muestra.",
+      "description": "No es un prototipo ni un MVP. Estas son las cifras del sistema que hay detrás de esas conversaciones, verificadas contra el código.",
+      "items": [
+        { "value": "88", "label": "tablas en 20 familias de datos", "featured": true },
+        { "value": "214", "label": "rutas de API", "featured": false },
+        { "value": "142", "label": "casos de uso", "featured": false },
+        { "value": "29", "label": "colas de trabajo", "featured": false },
+        { "value": "18", "label": "herramientas que el agente puede ejecutar", "featured": false },
+        { "value": "8", "label": "aplicaciones de IA distintas, no una", "featured": true },
+        { "value": "2.550", "label": "pruebas automatizadas entre backend y frontend", "featured": false }
+      ]
+    },
+    "stack": {
+      "eyebrow": "Con qué está hecho",
+      "title": "Las mismas decisiones que tomamos en tu proyecto.",
+      "groups": [
+        {
+          "title": "Backend",
+          "items": [
+            "NestJS 11 · TypeScript estricto",
+            "Prisma 7 · PostgreSQL 16",
+            "Redis 7 · BullMQ",
+            "Socket.IO en tiempo real"
+          ]
+        },
+        {
+          "title": "Producto",
+          "items": [
+            "Next.js 15 · React 19",
+            "Tailwind CSS 4",
+            "Tipos generados del contrato OpenAPI",
+            "Arquitectura por módulos con fronteras verificadas"
+          ]
+        },
+        {
+          "title": "Inteligencia",
+          "items": [
+            "Claude · Sonnet y Haiku",
+            "GPT para clasificación y resumen",
+            "ElevenLabs para voz en español",
+            "IA supervisora que evalúa la calidad"
+          ]
+        }
+      ]
+    },
+    "pilots": {
+      "eyebrow": "Dónde está hoy",
+      "title": "Tres negocios que venden de tres formas distintas.",
+      "description": "Cero desarrollo a medida entre uno y otro: el mismo producto, configurado.",
+      "items": [
+        {
+          "name": "Joao's Burguer",
+          "sector": "Comida rápida · Palmira",
+          "description": "Pedidos a domicilio por WhatsApp con pago por Nequi y efectivo. El agente toma el pedido completo; el equipo verifica y despacha.",
+          "figure": "37 productos"
+        },
+        {
+          "name": "Savage",
+          "sector": "Moda urbana · Bogotá",
+          "description": "Catálogo con tallas, colores y foto por variante. El agente encuentra la prenda aunque se la pidan con errores de escritura.",
+          "figure": "129 productos · 385 imágenes"
+        },
+        {
+          "name": "The Brothers Inc",
+          "sector": "Estudio de grabación · Bogotá",
+          "description": "Aquí lo que se vende es tiempo. El agente consulta disponibilidad real, agenda la sesión y el sistema recuerda 24 horas y 1 hora antes.",
+          "figure": "19 servicios con agenda"
+        }
+      ]
+    },
+    "closing": {
+      "title": "¿Te interesa Axi, o te interesa lo que hacemos?",
+      "description": "Las dos puertas están abiertas, y llevan a sitios distintos a propósito.",
+      "product_cta": {
+        "label": "Conocer Axi Connect",
+        "href": "https://axi-connect.co",
+        "external": true
+      },
+      "kodecol_cta": {
+        "label": "Construyamos el tuyo",
+        "href": "/#cotizaciones",
+        "external": false
+      },
+      "note": "La primera te lleva al sitio de Axi, donde puedes agendar una demo. La segunda nos escribe a nosotros, si lo que quieres es un producto propio como este."
+    }
+  },
+  "seo": {
+    "title": "Axi Connect",
+    "description": "Axi Connect es el SaaS de ventas por chat con inteligencia artificial que Kodecol diseñó, construyó y opera. En producción, con tres empresas piloto en Colombia."
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "slug": "cristian-velasquez",
+  "full_name": "Cristian David Velásquez García",
+  "short_name": "Cristian",
+  "role_badge": "Full Stack Developer · Líder Técnico",
+  "tagline": "Automatización, inteligencia artificial y arquitectura cloud. Construyo sistemas que liberan equipos y mueven negocios.",
+  "location": "Bogotá D.C · Fontibón, Colombia",
+  "photo_src": "/images/team/cristian_hero.png",
+  "cv_src": "/cv/cristian_velasquez_cv.pdf",
+  "metrics": [
+    {
+      "value": "4+",
+      "label": "años de experiencia"
+    },
+    {
+      "value": "10+",
+      "label": "proyectos entregados"
+    },
+    {
+      "value": "15+",
+      "label": "tecnologías"
+    }
+  ],
+  "about": "Desarrollador Full Stack con más de 4 años entregando soluciones de extremo a extremo: automatización, IA y nube. He liderado la automatización de áreas completas, optimizado plataformas críticas (de 25s a menos de 1s de carga) y construido productos web, móviles, de escritorio y de datos. Hoy lidero el desarrollo en Megaguay y construyo Axi Connect.",
+  "skill_groups": [
+    {
+      "title": "Lenguajes & Frameworks",
+      "skills": [
+        "Python",
+        "Node / TypeScript",
+        "PHP",
+        "Java / Spring"
+      ]
+    },
+    {
+      "title": "Front & Mobile",
+      "skills": [
+        "React / Next",
+        "Vue",
+        "Angular / Ionic",
+        "React Native",
+        "Electron"
+      ]
+    },
+    {
+      "title": "Datos",
+      "skills": [
+        "PostgreSQL",
+        "MongoDB",
+        "MySQL / MariaDB",
+        "Oracle",
+        "Pentaho"
+      ]
+    },
+    {
+      "title": "IA, Cloud & Integraciones",
+      "skills": [
+        "IA generativa / OCR",
+        "Servidores cloud",
+        "SIESA / Zoho",
+        "SalesForce",
+        "Firebase"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Desarrollador Full Stack",
+      "company": "Megaguay Colombia",
+      "period": "11/2025 – Actual",
+      "location": "Bogotá",
+      "description": "Automatización de procesos con servidor Python, integraciones SIESA/Zoho/bases de datos, alta disponibilidad y administración de servidores cloud. Una persona a cargo.",
+      "initially_visible": true
+    },
+    {
+      "role": "Desarrollador Full Stack",
+      "company": "Quantica",
+      "period": "03/2025 – 05/2026",
+      "location": "Remoto",
+      "description": "IA para lectura de facturas por foto (Premium Plaza, Primavera Urbana) con PHP/Vue/Lando e IA en SuiteCRM. Optimización del sitio de Premium Plaza (WordPress) de 25s a menos de 1s de carga.",
+      "initially_visible": true
+    },
+    {
+      "role": "Desarrollador Python",
+      "company": "Terpel S.A",
+      "period": "02/2025 – 04/2025",
+      "location": "Remoto",
+      "description": "Monitoreo de bandeja de correo que procesa PDF adjuntos y organiza la información en Google Sheets.",
+      "initially_visible": true
+    },
+    {
+      "role": "Analista de Desarrollo",
+      "company": "La Fortuna S.A",
+      "period": "03/2022 – 10/2024",
+      "location": "Cali",
+      "description": "ETL (MariaDB, Oracle, MongoDB) con Pentaho y Apache/PHP; dispositivo FIVE (cédulas y huellas); reportes automáticos por email y FTP.",
+      "initially_visible": true
+    },
+    {
+      "role": "Desarrollador SalesForce",
+      "company": "Federación Colombiana de Golf",
+      "period": "01/2025 – 02/2025",
+      "location": "Remoto",
+      "description": "Fórmulas de puntaje de golf sobre SalesForce.",
+      "initially_visible": false
+    },
+    {
+      "role": "Desarrollador Desktop",
+      "company": "Aescala",
+      "period": "06/2023 – 11/2023",
+      "location": "Cali",
+      "description": "Aplicación de escritorio con Electron JS, Angular JS, Node JS y MySQL.",
+      "initially_visible": false
+    },
+    {
+      "role": "Desarrollador Mobile",
+      "company": "Travelapp",
+      "period": "07/2023 – 02/2024",
+      "location": "Cali",
+      "description": "App móvil con React Native y Firebase, publicada en App Store y Google Play.",
+      "initially_visible": false
+    },
+    {
+      "role": "Desarrollador Software",
+      "company": "Element Holding S.A.S",
+      "period": "09/2021 – 12/2021",
+      "location": "Bogotá",
+      "description": "Aplicación de escritorio con Electron JS, Vue JS y MongoDB.",
+      "initially_visible": false
+    }
+  ],
+  "education": [
+    {
+      "title": "Ingeniería en Ciencia de Datos",
+      "institution": "Corporación Universitaria Iberoamericana",
+      "period": "2024 – Actual"
+    },
+    {
+      "title": "Diplomado en Desarrollo de Aplicaciones Web",
+      "institution": "Universidad Tecnológica de Pereira",
+      "period": "2020"
+    },
+    {
+      "title": "Técnico en Programación de Software",
+      "institution": "SENA · Medellín",
+      "period": "2018 – 2020"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Scrum Master",
+      "issuer": "CertiProf"
+    },
+    {
+      "title": "Scrum Foundation",
+      "issuer": "CertiProf"
+    },
+    {
+      "title": "Fundamentos de Programación",
+      "issuer": "Universidad de Pamplona · Misión TIC"
+    }
+  ],
+  "languages": [],
+  "soft_skills": [],
+  "projects": [
+    {
+      "title": "Axi Connect — el futuro del servicio al cliente",
+      "badge": "Producto propio · En construcción",
+      "description": "CRM con inteligencia artificial y atención omnicanal. Construido con Node + TypeScript/Express, WebSockets, PostgreSQL, MongoDB y Next.js + React.",
+      "chips": [
+        "Node / TS",
+        "WebSockets",
+        "PostgreSQL",
+        "Next.js",
+        "IA"
+      ],
+      "featured": true
+    },
+    {
+      "title": "Lectura de facturas con IA",
+      "badge": "Quantica",
+      "description": "Sistema de IA que lee facturas desde una foto y las procesa automáticamente para Premium Plaza y Primavera Urbana.",
+      "chips": [
+        "IA / OCR",
+        "PHP",
+        "Vue"
+      ],
+      "featured": false
+    },
+    {
+      "title": "Optimización Premium Plaza",
+      "badge": "Performance",
+      "description": "Optimización integral del sitio WordPress: de 25 segundos a menos de 1 segundo de carga.",
+      "chips": [
+        "WordPress",
+        "Performance"
+      ],
+      "featured": false
+    }
+  ],
+  "contact": {
+    "whatsapp_number": "573224970950",
+    "email": "gestion.proyectos.axi@gmail.com",
+    "linkedin_url": null,
+    "github_url": null
+  },
+  "seo": {
+    "title": "Cristian David Velásquez — Full Stack Developer · Líder Técnico",
+    "description": "Portafolio de Cristian David Velásquez García: automatización, inteligencia artificial y arquitectura cloud. Parte de la crew de Kodecol."
+  }
+}
